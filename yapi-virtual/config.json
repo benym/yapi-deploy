@@ -1,9 +1,9 @@
 {
   "port": "3000",
-  "adminAccount": "admin@lenovo.com",
+  "adminAccount": "admin@qq.com",
   "timeout":120000,
   "db": {
-    "servername": "g.mall.mongodb.dtc.uat",
+    "servername": "",
     "DATABASE": "yapi",
     "port": 27017,
     "user": "",
