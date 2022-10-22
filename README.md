@@ -7,10 +7,11 @@ yapi-virtual适用于虚拟机部署yapi
 部署步骤为
 
 1. 拷贝yapi-virtual到宿主机
-2. cd /yapi-virtual/vendors
-3. npm install --production --registry https://registry.npm.taobao.org
-4. cd /yapi-virtual
-5. nohup sh entrypoint.sh > out.txt 2&1 &
+2. 填写config.json内的server域名或ip
+3. cd /yapi-virtual/vendors
+4. npm install --production --registry https://registry.npm.taobao.org
+5. cd /yapi-virtual
+6. nohup sh entrypoint.sh > out.txt 2&1 &
 
 
 
