@@ -7,7 +7,7 @@ yapi-virtual适用于虚拟机部署yapi
 部署步骤为
 
 1. 拷贝yapi-virtual到宿主机
-2. 填写config.json内的server域名或ip
+2. cd /yapi-virtual, 填写config.json内servername, user, pass 其中authSource为mongodb自带库，默认通过admin授权即可
 3. cd /yapi-virtual/vendors
 4. npm install --production --registry https://registry.npm.taobao.org
 5. cd /yapi-virtual
@@ -15,8 +15,8 @@ yapi-virtual适用于虚拟机部署yapi
 
 
 
-Docker部署(机器手动部署)
-1. cd /yapi
+Docker部署(机器手动部署)，拷贝yapi-deploy到宿主机
+1. cd /yapi-deploy
 2. docker build -f Dockerfile -t demoyapi .
 3. docker run -d --name=yapi -p 3000:3000 demoyapi
 
