@@ -4,7 +4,12 @@
 lockPath="/yapi-virtual/init.lock"
 
 # 进入yapi项目，如部署机器不同，请修改该路径
-cd /tmp/yapi-virtual/vendors
+cd /yapi-virtual/vendors
+
+# 安装必要包
+npm config set registry https://registry.npm.taobao.org/
+npm install -g fs-extra --registry https://registry.npm.taobao.org/
+npm install -g safeify
 
 # 如果初始化文件文件存在,则直接运行,否则初始化
 if [ ! -f "$lockPath" ]; then
