@@ -10,7 +10,7 @@ cd /yapi/vendors
 if [ ! -f "$lockPath" ]; then
   # 启动Yapi初始化
   pm2 start server/install.js
-  pm2 start server/app.js
+  pm2 start server/app.js --name yapi
 else
   # 运行yapi管理系统
   pm2 start server/app.js
