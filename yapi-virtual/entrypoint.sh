@@ -8,6 +8,7 @@ cd /yapi-virtual/vendors
 
 # 安装必要包
 npm config set registry https://registry.npm.taobao.org/
+npm install pm2 -g
 npm install -g fs-extra --registry https://registry.npm.taobao.org/
 npm install -g safeify
 
