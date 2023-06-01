@@ -1,7 +1,5 @@
 ### Yapi
 
-yapi官网 http://yapi.smart-xwork.cn/#
-
 yapi开源地址 https://github.com/YMFE/yapi
 
 yapi-virtual适用于虚拟机部署yapi
